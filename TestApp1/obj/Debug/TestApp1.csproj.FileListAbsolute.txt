@@ -1,0 +1,9 @@
+F:\ПОЛИТЕХ\3 семестр\Управление ИТ-проектами\1laba\TestApp1\TestApp1\bin\Debug\TestApp1.exe.config
+F:\ПОЛИТЕХ\3 семестр\Управление ИТ-проектами\1laba\TestApp1\TestApp1\bin\Debug\TestApp1.exe
+F:\ПОЛИТЕХ\3 семестр\Управление ИТ-проектами\1laba\TestApp1\TestApp1\bin\Debug\TestApp1.pdb
+F:\ПОЛИТЕХ\3 семестр\Управление ИТ-проектами\1laba\TestApp1\TestApp1\obj\Debug\TestApp1.csprojResolveAssemblyReference.cache
+F:\ПОЛИТЕХ\3 семестр\Управление ИТ-проектами\1laba\TestApp1\TestApp1\obj\Debug\TestApp1.Form1.resources
+F:\ПОЛИТЕХ\3 семестр\Управление ИТ-проектами\1laba\TestApp1\TestApp1\obj\Debug\TestApp1.Properties.Resources.resources
+F:\ПОЛИТЕХ\3 семестр\Управление ИТ-проектами\1laba\TestApp1\TestApp1\obj\Debug\TestApp1.csproj.GenerateResource.Cache
+F:\ПОЛИТЕХ\3 семестр\Управление ИТ-проектами\1laba\TestApp1\TestApp1\obj\Debug\TestApp1.exe
+F:\ПОЛИТЕХ\3 семестр\Управление ИТ-проектами\1laba\TestApp1\TestApp1\obj\Debug\TestApp1.pdb
