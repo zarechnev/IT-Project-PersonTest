@@ -39,8 +39,8 @@
             this.label9Judging = new System.Windows.Forms.Label();
             this.label10Perceiving = new System.Windows.Forms.Label();
             this.label11TypePerson = new System.Windows.Forms.Label();
-            this.richTextBox1Variant1Area = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2Variant2Area = new System.Windows.Forms.RichTextBox();
+            this.FormQuestion_1 = new System.Windows.Forms.RichTextBox();
+            this.FormQuestion_2 = new System.Windows.Forms.RichTextBox();
             this.button1Variant1 = new System.Windows.Forms.Button();
             this.button2Variant2 = new System.Windows.Forms.Button();
             this.richTextBox1PersonDescription = new System.Windows.Forms.RichTextBox();
@@ -157,21 +157,22 @@
             this.label11TypePerson.TabIndex = 12;
             this.label11TypePerson.Text = "Итог теста =";
             // 
-            // richTextBox1Variant1Area
+            // FormQuestion_1
             // 
-            this.richTextBox1Variant1Area.Location = new System.Drawing.Point(12, 50);
-            this.richTextBox1Variant1Area.Name = "richTextBox1Variant1Area";
-            this.richTextBox1Variant1Area.Size = new System.Drawing.Size(464, 96);
-            this.richTextBox1Variant1Area.TabIndex = 13;
-            this.richTextBox1Variant1Area.Text = "";
+            this.FormQuestion_1.Location = new System.Drawing.Point(12, 50);
+            this.FormQuestion_1.Name = "FormQuestion_1";
+            this.FormQuestion_1.Size = new System.Drawing.Size(464, 96);
+            this.FormQuestion_1.TabIndex = 13;
+            this.FormQuestion_1.Text = "";
+            this.FormQuestion_1.TextChanged += new System.EventHandler(this.richTextBox1Variant1Area_TextChanged);
             // 
-            // richTextBox2Variant2Area
+            // FormQuestion_2
             // 
-            this.richTextBox2Variant2Area.Location = new System.Drawing.Point(12, 194);
-            this.richTextBox2Variant2Area.Name = "richTextBox2Variant2Area";
-            this.richTextBox2Variant2Area.Size = new System.Drawing.Size(464, 96);
-            this.richTextBox2Variant2Area.TabIndex = 14;
-            this.richTextBox2Variant2Area.Text = "";
+            this.FormQuestion_2.Location = new System.Drawing.Point(12, 194);
+            this.FormQuestion_2.Name = "FormQuestion_2";
+            this.FormQuestion_2.Size = new System.Drawing.Size(464, 96);
+            this.FormQuestion_2.TabIndex = 14;
+            this.FormQuestion_2.Text = "";
             // 
             // button1Variant1
             // 
@@ -218,8 +219,8 @@
             this.Controls.Add(this.richTextBox1PersonDescription);
             this.Controls.Add(this.button2Variant2);
             this.Controls.Add(this.button1Variant1);
-            this.Controls.Add(this.richTextBox2Variant2Area);
-            this.Controls.Add(this.richTextBox1Variant1Area);
+            this.Controls.Add(this.FormQuestion_2);
+            this.Controls.Add(this.FormQuestion_1);
             this.Controls.Add(this.label11TypePerson);
             this.Controls.Add(this.label10Perceiving);
             this.Controls.Add(this.label9Judging);
@@ -252,12 +253,12 @@
         private System.Windows.Forms.Label label9Judging;
         private System.Windows.Forms.Label label10Perceiving;
         private System.Windows.Forms.Label label11TypePerson;
-        private System.Windows.Forms.RichTextBox richTextBox1Variant1Area;
-        private System.Windows.Forms.RichTextBox richTextBox2Variant2Area;
+        private System.Windows.Forms.RichTextBox FormQuestion_2;
         private System.Windows.Forms.Button button1Variant1;
         private System.Windows.Forms.Button button2Variant2;
         private System.Windows.Forms.RichTextBox richTextBox1PersonDescription;
         private System.Windows.Forms.Label label12PersonDescription;
+        public System.Windows.Forms.RichTextBox FormQuestion_1;
     }
 }
 

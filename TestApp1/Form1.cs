@@ -17,6 +17,9 @@ namespace TestApp1
             InitializeComponent();
         }
 
-     
+        private void richTextBox1Variant1Area_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

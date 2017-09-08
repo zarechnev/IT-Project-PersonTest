@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace TestApp1
 {
+
     static class Program
     {
         /// <summary>
@@ -14,13 +15,16 @@ namespace TestApp1
         [STAThread]
         static void Main()
         {
+            string QuestionsFile = "data/questions.txt";
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            var ListOfQuestion = new List<String>();
+            QuestionsFileLoader QuestionFile = new QuestionsFileLoader(QuestionsFile);
 
-
+            // Form1.FormQuestion_1.Text.Insert(0, QuestionFile.GetQuestionsList()[4]); 
+            
 
         }
     }
