@@ -21,7 +21,7 @@ namespace TestApp1
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            QuestionsFileLoader QuestionFile = new QuestionsFileLoader(QuestionsFile);
+            QuestionsFileLoaderClass QuestionFile = new QuestionsFileLoaderClass(QuestionsFile);
 
             // Form1.FormQuestion_1.Text.Insert(0, QuestionFile.GetQuestionsList()[4]); 
             

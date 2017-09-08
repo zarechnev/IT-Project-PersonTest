@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace TestApp1
 {
-    class QuestionsFileLoader
+    /// <summary>
+    ///  Класс QuestionsFileLoaderClass подгружает файл с вопросами.
+    /// </summary>
+    class QuestionsFileLoaderClass
     {
         List<string> QuestionsList = new List<string>();
 
-        public QuestionsFileLoader(string FileName)
+        /// <summary>
+        /// Конструктор класса QuestionsFileLoaderClass.
+        /// </summary>
+        /// <param name="FileName">Аргумент конструктора - string путь к файлу вопросов.</param>
+        public QuestionsFileLoaderClass(string FileName)
         {
             string line;
 
