@@ -39,6 +39,9 @@ namespace TestApp1
             }
         }
 
+        /// <summary>
+        /// Метод возвращает список вопросов.
+        /// </summary>
         public List<string> GetQuestionsList()
         {
             return QuestionsList;

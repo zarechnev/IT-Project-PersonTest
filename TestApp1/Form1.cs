@@ -31,37 +31,49 @@ namespace TestApp1
             QuestionsList.RemoveAt(0);
         }
 
-        private void button1Variant1_Click(object sender, EventArgs e)
+        private void buttonClick(byte ansIndex)
         {
-            Answer.Add(0);
-
-            FormQuestion_1.Text = QuestionsList.First();
-            QuestionsList.RemoveAt(0);
-            FormQuestion_2.Text = QuestionsList.First();
-            QuestionsList.RemoveAt(0);
-
-            if (QuestionsList.Count() == 0) {
-                System.Console.WriteLine("Last question.");
-                button1Variant1.Enabled = false;
-                button2Variant2.Enabled = false;
+            if (ansIndex == 0)
+            {
+                Answer.Add(1);
+                Answer.Add(0);
             }
-        }
-
-        private void button2Variant2_Click(object sender, EventArgs e)
-        {
-            Answer.Add(1);
-
-            FormQuestion_1.Text = QuestionsList.First();
-            QuestionsList.RemoveAt(0);
-            FormQuestion_2.Text = QuestionsList.First();
-            QuestionsList.RemoveAt(0);
+            else
+            {
+                Answer.Add(0);
+                Answer.Add(1);
+            }
 
             if (QuestionsList.Count() == 0)
             {
                 System.Console.WriteLine("Last question.");
                 button1Variant1.Enabled = false;
                 button2Variant2.Enabled = false;
+
+                TesterClass testerClassInstance = new TesterClass(PsychoTypesFile, Answer);
+
+                string PsychoType = testerClassInstance.GetPsychoType();
+
+                richTextBox1PersonDescription.Text = PsychoType;
             }
+
+            else
+            {
+                FormQuestion_1.Text = QuestionsList.First();
+                QuestionsList.RemoveAt(0);
+                FormQuestion_2.Text = QuestionsList.First();
+                QuestionsList.RemoveAt(0);
+            }
+        }
+
+        private void button1Variant1_Click(object sender, EventArgs e)
+        {
+            buttonClick(0);
+        }
+
+        private void button2Variant2_Click(object sender, EventArgs e)
+        {
+            buttonClick(1);
         }
     }
 }
