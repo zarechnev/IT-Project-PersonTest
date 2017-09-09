@@ -33,7 +33,9 @@ namespace TestApp1
             }
             catch
             {
+                System.Windows.Forms.MessageBox.Show("Файл вопросов не найден!");
                 System.Console.WriteLine("Error during load file!!!");
+                System.Windows.Forms.Application.Exit();
             }
         }
 

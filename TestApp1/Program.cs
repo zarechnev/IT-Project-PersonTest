@@ -15,17 +15,9 @@ namespace TestApp1
         [STAThread]
         static void Main()
         {
-            string QuestionsFile = "data/questions.txt";
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-
-            QuestionsFileLoaderClass QuestionFile = new QuestionsFileLoaderClass(QuestionsFile);
-
-            // Form1.FormQuestion_1.Text.Insert(0, QuestionFile.GetQuestionsList()[4]); 
-            
-
         }
     }
 }

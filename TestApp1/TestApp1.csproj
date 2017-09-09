@@ -83,7 +83,7 @@
   <ItemGroup>
     <Content Include="data\count_algorithm.txt" />
     <Content Include="data\questions.txt" />
-    <Content Include="data\psicho_types_notes.txt" />
+    <Content Include="data\psycho_types.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
